@@ -166,8 +166,18 @@ export function Story() {
         title="El día que volvimos a encontrarnos"
         mood="return"
       >
+        <div className="floating-hearts" aria-hidden="true">
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+        </div>
         <ScrollStory lines={story.return} />
-        <p className="date blue">18 de agosto.</p>
+        <p className="date return-date">18 de agosto.</p>
       </Chapter>
       <SceneTransition tone="to-red" />
       <section className="interlude" aria-label="El hilo rojo">
