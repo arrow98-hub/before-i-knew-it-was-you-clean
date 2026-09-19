@@ -223,7 +223,6 @@ export function Story() {
           <p className="arrival">Y entonces llegamos aquí.</p>
         </div>
       </section>
-      <SceneTransition tone="to-stars" />
       <Chapter id="august" number="IV" title="18 de agosto" mood="august">
         <Atmosphere variant="stars" />
         <ScrollStory lines={story.august} />
