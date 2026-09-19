@@ -146,8 +146,12 @@ export function Story() {
         <div className="liquid" />
         <ScrollStory lines={story.almost} />
         <p className="date">2 de junio.</p>
+        <img
+          className="story-image"
+          src="/images/june_month.png"
+          alt="Recuerdo del mes de junio"
+        />
       </Chapter>
-      <SceneTransition tone="to-thread" />
       <Chapter
         id="return"
         number="III"
