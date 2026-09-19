@@ -178,8 +178,12 @@ export function Story() {
         </div>
         <ScrollStory lines={story.return} />
         <p className="date return-date">18 de agosto.</p>
+        <img
+          className="story-image"
+          src="/images/hands.png"
+          alt="Dos manos entrelazadas"
+        />
       </Chapter>
-      <SceneTransition tone="to-red" />
       <section className="interlude" aria-label="El hilo rojo">
         <Thread />
         <div className="interlude-copy">
