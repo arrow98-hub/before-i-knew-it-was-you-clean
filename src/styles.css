@@ -522,6 +522,24 @@ main {
   opacity: 1;
   object-fit: cover;
 }
+.june-image {
+  overflow: hidden;
+  aspect-ratio: 1;
+}
+.june-image img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+.june-image__white {
+  filter: brightness(0) invert(1);
+}
+.june-image__heart {
+  clip-path: inset(18% 5% 46% 68%);
+}
 .prologue .story-image {
   margin-top: 2vh;
 }
