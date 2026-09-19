@@ -236,6 +236,11 @@ export function Story() {
           <p>Y dijiste que sí.</p>
         </div>
         <p className="date">18 de agosto.</p>
+        <img
+          className="story-image"
+          src="/images/august_month.png"
+          alt="Recuerdo del mes de agosto"
+        />
         <p className="caption">La noche en la que elegimos caminar juntos.</p>
       </Chapter>
       <Chapter id="us" number="V" title="Nosotros" mood="us">

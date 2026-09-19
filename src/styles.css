@@ -860,6 +860,9 @@ main {
   margin: 3vh auto 0;
   text-align: center;
 }
+.august .question {
+  margin-top: -4vh;
+}
 .question span,
 .caption {
   font: 20px "DM Mono";
