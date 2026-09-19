@@ -797,12 +797,12 @@ main {
 }
 .thread {
   position: absolute;
-  top: 4.8vh;
+  top: 3.5vh;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 4.8vh);
+  height: calc(100% - 3.5vh);
   z-index: 2;
   fill: none;
   stroke: #e83c43;
