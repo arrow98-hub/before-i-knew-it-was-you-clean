@@ -734,9 +734,9 @@ main {
 }
 .thread-heart {
   position: absolute;
-  top: 0.7vh;
+  top: 1.5vh;
   left: 50%;
-  z-index: 4;
+  z-index: 5;
   color: #e83c43;
   font-size: clamp(3.4rem, 6vw, 5.2rem);
   line-height: 1;
