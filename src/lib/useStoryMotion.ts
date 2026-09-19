@@ -123,11 +123,6 @@ export function useStoryMotion(root: RefObject<HTMLElement | null>) {
         yPercent: 4,
       });
       addAtmosphereMotion("#almost", ".liquid", { yPercent: -9, scale: 1.05 });
-      addAtmosphereMotion("#return", ".threads-bg", {
-        rotation: 0,
-        xPercent: 8,
-        scale: 1.1,
-      });
       addAtmosphereMotion("#us", ".rose", {
         xPercent: -5,
         yPercent: -6,

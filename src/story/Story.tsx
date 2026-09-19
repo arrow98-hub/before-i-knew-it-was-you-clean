@@ -166,7 +166,6 @@ export function Story() {
         title="El día que volvimos a encontrarnos"
         mood="return"
       >
-        <div className="threads-bg" />
         <ScrollStory lines={story.return} />
         <p className="date blue">18 de agosto.</p>
       </Chapter>

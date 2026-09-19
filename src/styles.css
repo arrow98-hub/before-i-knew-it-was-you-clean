@@ -636,20 +636,8 @@ main {
   animation: date-bounce 3.6s ease-in-out infinite;
 }
 .return {
-  background: #09182d;
+  background: linear-gradient(180deg, #a18dce 0%, #f492f0 100%);
   min-height: 185vh;
-}
-.threads-bg {
-  position: absolute;
-  inset: 0;
-  opacity: 0.6;
-  background: repeating-radial-gradient(
-    ellipse at 100% 50%,
-    transparent 0 7%,
-    #507fc824 7.2% 7.5%,
-    transparent 7.8% 14%
-  );
-  transform: rotate(-18deg) scale(1.6);
 }
 .blue {
   color: #9ec8f0;
