@@ -154,21 +154,34 @@ export function useStoryMotion(root: RefObject<HTMLElement | null>) {
       if (interlude && thread) {
         const length = thread.getTotalLength();
         gsap.set(thread, { strokeDasharray: length, strokeDashoffset: length });
-        const threadTimeline = gsap.timeline({
+        gsap.fromTo(
+          thread,
+          { strokeDashoffset: length },
+          {
+            strokeDashoffset: 0,
+            ease: "none",
+            scrollTrigger: {
+              trigger: interlude,
+              start: "top 92%",
+              end: "bottom 8%",
+              scrub: 2,
+            },
+          },
+        );
+        const copyTimeline = gsap.timeline({
           scrollTrigger: {
             trigger: interlude,
-            start: "top 88%",
-            end: "bottom 12%",
-            scrub: 1.8,
+            start: "top 78%",
+            end: "bottom 20%",
+            scrub: 1,
           },
         });
-        threadTimeline
-          .to(thread, { strokeDashoffset: 0, ease: "none" }, 0)
+        copyTimeline
           .fromTo(
             interlude.querySelectorAll(".interlude-copy > p"),
             { opacity: 0.18, y: 20 },
             { opacity: 1, y: 0, stagger: 0.1, ease: "none" },
-            0.08,
+            0,
           )
           .fromTo(
             interlude.querySelector(".interlude-copy h2"),

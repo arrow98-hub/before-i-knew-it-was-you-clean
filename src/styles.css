@@ -724,25 +724,37 @@ main {
   min-height: 170vh;
   background:
     radial-gradient(
-      ellipse 42% 34% at 50% 0%,
+      ellipse 24% 16% at 50% 0%,
       #e83c43 0%,
-      #c9364d 28%,
-      transparent 78%
+      #c9364d 24%,
+      transparent 72%
     ),
     linear-gradient(
       180deg,
       #f492f0 0%,
-      #f492f0 12%,
-      #241023 42%,
+      #f492f0 7%,
+      #241023 24%,
       #18080d 100%
     );
   overflow: hidden;
+}
+.interlude::before {
+  content: "";
+  position: absolute;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 12vh;
+  background: linear-gradient(180deg, #f492f0 0%, transparent 100%);
+  pointer-events: none;
 }
 .thread {
   position: absolute;
   inset: 0;
   width: 100%;
   height: 100%;
+  z-index: 2;
   fill: none;
   stroke: #e83c43;
   stroke-width: 1.1;
