@@ -203,6 +203,7 @@
     height: 7vh;
   }
   .hero-image {
+    transform: scale(1.08);
     object-position: center 60%;
   }
 }
@@ -538,7 +539,7 @@ main {
   filter: brightness(0) invert(1);
 }
 .june-image__heart {
-  clip-path: inset(18% 5% 46% 68%);
+  clip-path: inset(17% 4% 49% 69%);
 }
 .prologue .story-image {
   margin-top: 2vh;
