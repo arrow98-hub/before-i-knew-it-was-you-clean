@@ -722,22 +722,23 @@ main {
 .interlude {
   position: relative;
   min-height: 170vh;
+  margin-top: -1px;
   background: linear-gradient(
     180deg,
     #f492f0 0%,
-    #f492f0 8%,
-    #241023 25%,
+    #f492f0 4%,
+    #241023 15%,
     #18080d 100%
   );
   overflow: hidden;
 }
 .thread-heart {
   position: absolute;
-  top: 1.2vh;
+  top: 0.7vh;
   left: 50%;
   z-index: 4;
   color: #e83c43;
-  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  font-size: clamp(2.8rem, 5vw, 4.2rem);
   line-height: 1;
   transform: translateX(-50%);
   filter: drop-shadow(0 0 8px #ff7c7c);
@@ -796,17 +797,17 @@ main {
 }
 .thread {
   position: absolute;
-  top: 1.9vh;
+  top: 3.8vh;
   right: 0;
   bottom: 0;
   left: 0;
   width: 100%;
-  height: calc(100% - 1.9vh);
+  height: calc(100% - 3.8vh);
   z-index: 2;
   fill: none;
-  stroke: #f492f0;
+  stroke: #e83c43;
   stroke-width: 1.1;
-  filter: drop-shadow(0 0 8px #f492f0);
+  filter: drop-shadow(0 0 8px #ff7c7c);
   opacity: 0.8;
 }
 .interlude-copy {
