@@ -15,7 +15,7 @@ export function ScrollStory({
   className = "",
   step = 30,
   startOffset = 12,
-  endPadding = 24,
+  endPadding = 8,
 }: ScrollStoryProps) {
   const stage = useRef<HTMLDivElement>(null);
   usePhraseReveal(stage);
