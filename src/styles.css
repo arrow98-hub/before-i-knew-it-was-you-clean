@@ -523,6 +523,10 @@ main {
   opacity: 1;
   object-fit: cover;
 }
+.couple-image {
+  width: min(680px, 88vw);
+  margin-top: 5vh;
+}
 .june-image {
   overflow: hidden;
   aspect-ratio: 1;

@@ -246,8 +246,12 @@ export function Story() {
       <Chapter id="us" number="V" title="Nosotros" mood="us">
         <div className="rose" />
         <ScrollStory lines={story.us} />
+        <img
+          className="story-image couple-image"
+          src="/images/arian_oriana.png"
+          alt="Arian y Oriana juntos"
+        />
       </Chapter>
-      <SceneTransition tone="to-cosmos" />
       <Chapter
         id="future"
         number="VI"
