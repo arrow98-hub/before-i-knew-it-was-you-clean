@@ -105,7 +105,7 @@ export function Thread() {
       preserveAspectRatio="none"
       aria-hidden="true"
     >
-      <path d="M52 0 C 6 90, 92 155, 48 245 S 6 395, 56 480 S 95 610, 45 710 S 15 815, 56 900" />
+      <path d="M50 0 C 6 90, 92 155, 48 245 S 6 395, 56 480 S 95 610, 45 710 S 15 815, 56 900" />
     </svg>
   );
 }
