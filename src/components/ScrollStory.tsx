@@ -14,7 +14,7 @@ export function ScrollStory({
   lines,
   className = "",
   step = 30,
-  startOffset = 12,
+  startOffset = 2,
   endPadding = 8,
 }: ScrollStoryProps) {
   const stage = useRef<HTMLDivElement>(null);

@@ -8,7 +8,7 @@
   position: relative;
   z-index: 3;
   max-width: 900px;
-  margin: 6vh auto 0;
+  margin: 0 auto;
   overflow: visible;
 }
 .story-line {
@@ -54,7 +54,7 @@
 }
 @media (max-width: 700px) {
   .story-reveal {
-    margin-top: 6vh;
+    margin-top: 0;
   }
   .story-line {
     width: 88%;
@@ -405,7 +405,7 @@ main {
 .chapter {
   position: relative;
   min-height: 145vh;
-  padding: clamp(90px, 15vh, 190px) max(9vw, 25px);
+  padding: clamp(90px, 15vh, 190px) max(9vw, 25px) 8vh;
   isolation: isolate;
 }
 .chapter-label {
@@ -609,7 +609,7 @@ main {
   position: relative;
   z-index: 3;
   text-align: center;
-  margin: 25vh 0 0;
+  margin: 4vh 0 0;
   font:
     italic clamp(4rem, 10vw, 11rem)/0.9 "Playfair Display",
     serif;
@@ -699,7 +699,7 @@ main {
 .question {
   position: relative;
   z-index: 3;
-  margin: 22vh auto 0;
+  margin: 8vh auto 0;
   text-align: center;
 }
 .question span,
@@ -860,12 +860,11 @@ footer h2 {
     bottom: 23%;
   }
   .chapter {
-    padding-left: 25px;
-    padding-right: 25px;
+    padding: 78px 25px 6vh;
   }
   .chapter-label {
     position: absolute;
-    top: 60px;
+    top: 32px;
     font-size: 1.2rem;
   }
   .copy,
