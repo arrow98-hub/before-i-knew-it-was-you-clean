@@ -227,7 +227,7 @@ export function Story() {
         <Atmosphere variant="stars" />
         <ScrollStory lines={story.august} />
         <div className="question">
-          <span>Así que aquella noche…</span>
+          <span>Lo que deseaba profundamente</span>
           <h2>
             ¿Quieres ser
             <br />
@@ -238,7 +238,6 @@ export function Story() {
         <p className="date">18 de agosto.</p>
         <p className="caption">La noche en la que elegimos caminar juntos.</p>
       </Chapter>
-      <SceneTransition tone="to-rose" />
       <Chapter id="us" number="V" title="Nosotros" mood="us">
         <div className="rose" />
         <ScrollStory lines={story.us} />
