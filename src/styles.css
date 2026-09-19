@@ -722,32 +722,77 @@ main {
 .interlude {
   position: relative;
   min-height: 170vh;
-  background:
-    radial-gradient(
-      ellipse 24% 16% at 50% 0%,
-      #e83c43 0%,
-      #c9364d 24%,
-      transparent 72%
-    ),
-    linear-gradient(
-      180deg,
-      #f492f0 0%,
-      #f492f0 7%,
-      #241023 24%,
-      #18080d 100%
-    );
+  background: linear-gradient(
+    180deg,
+    #f492f0 0%,
+    #f492f0 8%,
+    #241023 25%,
+    #18080d 100%
+  );
   overflow: hidden;
 }
-.interlude::before {
-  content: "";
+.thread-heart {
   position: absolute;
+  top: 1.2vh;
+  left: 50%;
+  z-index: 4;
+  color: #e83c43;
+  font-size: clamp(1.8rem, 3vw, 2.8rem);
+  line-height: 1;
+  transform: translateX(-50%);
+  filter: drop-shadow(0 0 8px #ff7c7c);
+}
+.thread-stars {
+  position: absolute;
+  inset: 0;
   z-index: 1;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 12vh;
-  background: linear-gradient(180deg, #f492f0 0%, transparent 100%);
   pointer-events: none;
+}
+.thread-stars span {
+  position: absolute;
+  color: #ffdce9;
+  font-size: clamp(0.8rem, 1.5vw, 1.25rem);
+  opacity: 0.65;
+  animation: star-twinkle 3.8s ease-in-out infinite;
+}
+.thread-stars span:nth-child(1) {
+  left: 12%;
+  top: 18%;
+}
+.thread-stars span:nth-child(2) {
+  left: 26%;
+  top: 33%;
+  animation-delay: -1.4s;
+}
+.thread-stars span:nth-child(3) {
+  left: 78%;
+  top: 22%;
+  animation-delay: -2.1s;
+}
+.thread-stars span:nth-child(4) {
+  left: 88%;
+  top: 45%;
+  animation-delay: -0.8s;
+}
+.thread-stars span:nth-child(5) {
+  left: 17%;
+  top: 61%;
+  animation-delay: -2.8s;
+}
+.thread-stars span:nth-child(6) {
+  left: 73%;
+  top: 68%;
+  animation-delay: -1.9s;
+}
+.thread-stars span:nth-child(7) {
+  left: 42%;
+  top: 79%;
+  animation-delay: -3.2s;
+}
+.thread-stars span:nth-child(8) {
+  left: 94%;
+  top: 82%;
+  animation-delay: -0.4s;
 }
 .thread {
   position: absolute;
@@ -939,6 +984,17 @@ footer h2 {
   100% {
     transform: translate3d(-12px, -28vh, 0) scale(0.82) rotate(-5deg);
     opacity: 0;
+  }
+}
+@keyframes star-twinkle {
+  0%,
+  100% {
+    opacity: 0.25;
+    transform: scale(0.75) rotate(0deg);
+  }
+  50% {
+    opacity: 0.9;
+    transform: scale(1.15) rotate(12deg);
   }
 }
 @keyframes arrow-breathe {

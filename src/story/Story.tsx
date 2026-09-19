@@ -189,6 +189,19 @@ export function Story() {
         />
       </Chapter>
       <section className="interlude" aria-label="El hilo rojo">
+        <div className="thread-heart" aria-hidden="true">
+          ♥
+        </div>
+        <div className="thread-stars" aria-hidden="true">
+          <span>✦</span>
+          <span>✧</span>
+          <span>✦</span>
+          <span>✧</span>
+          <span>✦</span>
+          <span>✧</span>
+          <span>✦</span>
+          <span>✧</span>
+        </div>
         <Thread />
         <div className="interlude-copy">
           <p>Nos conocimos.</p>
