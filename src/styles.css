@@ -696,13 +696,46 @@ main {
   top: 76%;
   animation-duration: 22s;
 }
+.floating-hearts span:nth-child(9) {
+  left: 16%;
+  top: 70%;
+  animation-duration: 18s;
+}
+.floating-hearts span:nth-child(10) {
+  left: 40%;
+  top: 24%;
+  animation-duration: 23s;
+}
+.floating-hearts span:nth-child(11) {
+  left: 68%;
+  top: 68%;
+  animation-duration: 16s;
+}
+.floating-hearts span:nth-child(12) {
+  left: 80%;
+  top: 31%;
+  animation-duration: 21s;
+}
 .return-date {
   color: #26304f;
 }
 .interlude {
   position: relative;
   min-height: 170vh;
-  background: linear-gradient(180deg, #09182d 0%, #241023 47%, #18080d 100%);
+  background:
+    radial-gradient(
+      ellipse 42% 34% at 50% 0%,
+      #e83c43 0%,
+      #c9364d 28%,
+      transparent 78%
+    ),
+    linear-gradient(
+      180deg,
+      #f492f0 0%,
+      #f492f0 12%,
+      #241023 42%,
+      #18080d 100%
+    );
   overflow: hidden;
 }
 .thread {

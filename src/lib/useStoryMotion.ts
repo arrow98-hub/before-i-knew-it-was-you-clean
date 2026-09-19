@@ -157,9 +157,9 @@ export function useStoryMotion(root: RefObject<HTMLElement | null>) {
         const threadTimeline = gsap.timeline({
           scrollTrigger: {
             trigger: interlude,
-            start: "top 72%",
-            end: "bottom 30%",
-            scrub: 1,
+            start: "top 88%",
+            end: "bottom 12%",
+            scrub: 1.8,
           },
         });
         threadTimeline
