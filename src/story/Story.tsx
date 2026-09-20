@@ -277,11 +277,6 @@ export function Story() {
         <div className="rose" />
         <ScrollStory lines={story.us} />
         <img
-          className="story-image couple-small-image"
-          src="/images/couple.png"
-          alt="Arian y Oriana juntos"
-        />
-        <img
           className="story-image couple-image"
           src="/images/arian_oriana.png"
           alt="Arian y Oriana juntos"
@@ -295,6 +290,11 @@ export function Story() {
       >
         <Atmosphere variant="stars" />
         <ScrollStory lines={story.future} />
+        <img
+          className="story-image couple-small-image"
+          src="/images/couple.png"
+          alt="Arian y Oriana juntos"
+        />
       </Chapter>
       <SceneTransition tone="to-black" />
       <section className="surprise">

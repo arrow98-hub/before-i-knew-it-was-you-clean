@@ -1181,18 +1181,18 @@ footer h2 {
     transform: translateY(0);
     opacity: 0.65;
   }
-  @keyframes music-wave {
-    from {
-      height: 7px;
-      opacity: 0.55;
-    }
-    to {
-      height: 25px;
-      opacity: 1;
-    }
-  }
   50% {
     transform: translateY(5px);
+    opacity: 1;
+  }
+}
+@keyframes music-wave {
+  from {
+    height: 7px;
+    opacity: 0.55;
+  }
+  to {
+    height: 25px;
     opacity: 1;
   }
 }
