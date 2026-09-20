@@ -38,12 +38,33 @@ function SceneTransition({ tone }: { tone: string }) {
 }
 
 const STORY_SONG = "/music/Risk%20It%20All.mp3";
+const STORY_START = new Date(2026, 7, 18, 21, 0, 0).getTime();
+
+function getElapsedTime() {
+  const elapsed = Math.max(0, Date.now() - STORY_START);
+  const minute = 60 * 1000;
+  const hour = 60 * minute;
+  const day = 24 * hour;
+  const week = 7 * day;
+  const month = 30.436875 * day;
+  const year = 365.2425 * day;
+
+  return {
+    years: Math.floor(elapsed / year),
+    months: Math.floor(elapsed / month),
+    weeks: Math.floor(elapsed / week),
+    days: Math.floor(elapsed / day),
+    hours: Math.floor(elapsed / hour),
+    minutes: Math.floor(elapsed / minute),
+  };
+}
 
 export function Story() {
   const root = useRef<HTMLElement>(null);
   const audio = useRef<HTMLAudioElement>(null);
   const [isPlaying, setIsPlaying] = useState(false);
   const [audioAvailable, setAudioAvailable] = useState(true);
+  const [elapsedTime, setElapsedTime] = useState(getElapsedTime);
   useEffect(() => {
     const html = document.documentElement;
     const previousBehavior = html.style.scrollBehavior;
@@ -51,6 +72,11 @@ export function Story() {
     return () => {
       html.style.scrollBehavior = previousBehavior;
     };
+  }, []);
+  useEffect(() => {
+    const updateElapsedTime = () => setElapsedTime(getElapsedTime());
+    const timer = window.setInterval(updateElapsedTime, 1000);
+    return () => window.clearInterval(timer);
   }, []);
   useStoryMotion(root);
 
@@ -337,6 +363,30 @@ export function Story() {
           <p className="date">18 de agosto.</p>
           <h2>El comienzo de todo lo que todavía nos queda por vivir.</h2>
           <p className="signature">Antes de saber que eras tú.</p>
+          <div className="elapsed-counter" aria-label="Tiempo transcurrido">
+            <span>
+              {elapsedTime.years} {elapsedTime.years === 1 ? "año" : "años"}
+            </span>
+            <span>
+              {elapsedTime.months}{" "}
+              {elapsedTime.months === 1 ? "mes" : "meses"}
+            </span>
+            <span>
+              {elapsedTime.weeks}{" "}
+              {elapsedTime.weeks === 1 ? "semana" : "semanas"}
+            </span>
+            <span>
+              {elapsedTime.days} {elapsedTime.days === 1 ? "día" : "días"}
+            </span>
+            <span>
+              {elapsedTime.hours}{" "}
+              {elapsedTime.hours === 1 ? "hora" : "horas"}
+            </span>
+            <span>
+              {elapsedTime.minutes}{" "}
+              {elapsedTime.minutes === 1 ? "minuto" : "minutos"}
+            </span>
+          </div>
         </div>
       </footer>
     </main>
