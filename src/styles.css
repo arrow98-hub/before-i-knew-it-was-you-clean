@@ -1168,14 +1168,14 @@ footer h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 10px 18px;
-  max-width: 850px;
+  gap: 14px 28px;
+  max-width: 1000px;
   margin: 5vh auto 0;
   color: #c9b9ae;
   font:
-    500 clamp(0.75rem, 1.4vw, 1.1rem) "DM Mono",
+    500 clamp(1.05rem, 2.2vw, 1.7rem) "DM Mono",
     monospace;
-  letter-spacing: 0.08em;
+  letter-spacing: 0.06em;
   text-transform: uppercase;
 }
 .elapsed-counter span {

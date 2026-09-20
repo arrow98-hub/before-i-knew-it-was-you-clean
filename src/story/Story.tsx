@@ -41,21 +41,41 @@ const STORY_SONG = "/music/Risk%20It%20All.mp3";
 const STORY_START = new Date(2026, 7, 18, 21, 0, 0).getTime();
 
 function getElapsedTime() {
-  const elapsed = Math.max(0, Date.now() - STORY_START);
+  const now = new Date();
+  const start = new Date(STORY_START);
+  let cursor = new Date(start);
+  let years = 0;
+  let months = 0;
+
+  while (true) {
+    const next = new Date(cursor);
+    next.setFullYear(next.getFullYear() + 1);
+    if (next > now) break;
+    cursor = next;
+    years += 1;
+  }
+
+  while (true) {
+    const next = new Date(cursor);
+    next.setMonth(next.getMonth() + 1);
+    if (next > now) break;
+    cursor = next;
+    months += 1;
+  }
+
+  const elapsed = Math.max(0, now.getTime() - cursor.getTime());
   const minute = 60 * 1000;
   const hour = 60 * minute;
   const day = 24 * hour;
   const week = 7 * day;
-  const month = 30.436875 * day;
-  const year = 365.2425 * day;
 
   return {
-    years: Math.floor(elapsed / year),
-    months: Math.floor(elapsed / month),
+    years,
+    months,
     weeks: Math.floor(elapsed / week),
-    days: Math.floor(elapsed / day),
-    hours: Math.floor(elapsed / hour),
-    minutes: Math.floor(elapsed / minute),
+    days: Math.floor((elapsed % week) / day),
+    hours: Math.floor((elapsed % day) / hour),
+    minutes: Math.floor((elapsed % hour) / minute),
   };
 }
 
@@ -364,9 +384,12 @@ export function Story() {
           <h2>El comienzo de todo lo que todavía nos queda por vivir.</h2>
           <p className="signature">Antes de saber que eras tú.</p>
           <div className="elapsed-counter" aria-label="Tiempo transcurrido">
-            <span>
-              {elapsedTime.years} {elapsedTime.years === 1 ? "año" : "años"}
-            </span>
+            {elapsedTime.years > 0 && (
+              <span>
+                {elapsedTime.years}{" "}
+                {elapsedTime.years === 1 ? "año" : "años"}
+              </span>
+            )}
             <span>
               {elapsedTime.months}{" "}
               {elapsedTime.months === 1 ? "mes" : "meses"}
