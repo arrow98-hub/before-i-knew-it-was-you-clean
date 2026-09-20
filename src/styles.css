@@ -1168,12 +1168,12 @@ footer h2 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 14px 28px;
+  gap: 10px 24px;
   max-width: 1000px;
-  margin: 5vh auto 0;
+  margin: 2.5vh auto 0;
   color: #c9b9ae;
   font:
-    500 clamp(1.05rem, 2.2vw, 1.7rem) "DM Mono",
+    500 clamp(1.25rem, 2.7vw, 2rem) "DM Mono",
     monospace;
   letter-spacing: 0.06em;
   text-transform: uppercase;
