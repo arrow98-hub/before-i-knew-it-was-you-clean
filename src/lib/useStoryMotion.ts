@@ -164,7 +164,7 @@ export function useStoryMotion(root: RefObject<HTMLElement | null>) {
               trigger: interlude,
               start: "top 92%",
               end: "bottom 8%",
-              scrub: 2,
+              scrub: 1.2,
             },
           },
         );

@@ -222,6 +222,9 @@ export function Story() {
         <div className="thread-heart" aria-hidden="true">
           ♥
         </div>
+        <div className="thread-heart thread-heart-end" aria-hidden="true">
+          ♥
+        </div>
         <div className="thread-stars" aria-hidden="true">
           <span>✦</span>
           <span>✧</span>
@@ -307,26 +310,23 @@ export function Story() {
       <section className="surprise">
         <Atmosphere variant="stars" />
         <div>
-          <p>Pero hay algo que todavía no te he contado sobre aquella noche.</p>
-          <p>Quiero que vuelvas conmigo a ese cielo.</p>
-          <p>Porque mientras nosotros hablábamos aquella noche…</p>
+          {story.surprise.opening.map((line) => (
+            <p key={line}>{line}</p>
+          ))}
           <h2>
-            el universo también
+            {story.surprise.title[0]}
             <br />
-            estaba ahí.
+            {story.surprise.title[1]}
           </h2>
+          <img
+            className="story-image universe-image"
+            src="/images/universe.png"
+            alt="El cielo estrellado de aquella noche"
+          />
           <div className="gift">
-            <p>
-              Quería regalarte algo que pudiera guardar aquel momento para
-              siempre.
-            </p>
-            <p>
-              La posición exacta de las estrellas sobre nosotros aquella noche.
-            </p>
-            <p>
-              Para que, aunque pasen los años… siempre podamos volver al lugar
-              donde comenzó este capítulo.
-            </p>
+            {story.surprise.gift.map((line) => (
+              <p key={line}>{line}</p>
+            ))}
           </div>
         </div>
       </section>

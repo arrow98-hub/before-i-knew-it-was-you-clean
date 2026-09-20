@@ -125,4 +125,17 @@ export const story = {
     "Feliz primer mes, mi niña. Gracias por llegar a mi vida. Y gracias por quedarte.",
     "Te quiero.",
   ],
+  surprise: {
+    opening: [
+      "Pero hay algo que todavía no te he contado sobre aquella noche.",
+      "Quiero que vuelvas conmigo a ese cielo.",
+      "Porque mientras nosotros hablábamos aquella noche…",
+    ],
+    title: ["EL UNIVERSO TAMBIÉN", "ESTABA AHÍ."],
+    gift: [
+      "Quería regalarte algo que pudiera guardar aquel momento para siempre.",
+      "La posición exacta de las estrellas sobre nosotros aquella noche.",
+      "Para que, aunque pasen los años… siempre podamos volver al lugar donde comenzó este capítulo.",
+    ],
+  },
 };

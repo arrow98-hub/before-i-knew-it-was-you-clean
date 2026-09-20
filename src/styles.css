@@ -574,6 +574,10 @@ main {
   width: min(480px, 78vw);
   margin-top: 0.5vh;
 }
+.universe-image {
+  width: min(560px, 82vw);
+  margin-top: 0;
+}
 .june-image {
   overflow: hidden;
   aspect-ratio: 1;
@@ -914,6 +918,11 @@ main {
   transform: translateX(-50%);
   filter: drop-shadow(0 0 8px #ff7c7c);
 }
+.thread-heart-end {
+  top: auto;
+  bottom: -0.8vh;
+  left: 56%;
+}
 .thread-stars {
   position: absolute;
   inset: 0;
@@ -1108,7 +1117,7 @@ main {
     500 clamp(3.2rem, 7vw, 8rem)/0.9 "Playfair Display",
     serif;
   letter-spacing: -0.07em;
-  margin: 0 0 33vh;
+  margin: 0 0 8vh;
 }
 .gift {
   margin-top: 18vh;
