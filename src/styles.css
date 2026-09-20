@@ -577,6 +577,9 @@ main {
 .universe-image {
   width: min(560px, 82vw);
   margin-top: 0;
+  filter: drop-shadow(0 0 12px #8da8ff55);
+  will-change: transform, filter;
+  animation: universe-glow 7s ease-in-out infinite;
 }
 .june-image {
   overflow: hidden;
@@ -1094,7 +1097,7 @@ main {
 }
 .surprise {
   position: relative;
-  min-height: 185vh;
+  min-height: 155vh;
   padding: 24vh 24px;
   background: #04050b;
   text-align: center;
@@ -1125,6 +1128,12 @@ main {
 .gift p {
   font-size: clamp(1.35rem, 2.5vw, 2.6rem);
   margin-bottom: 13vh;
+}
+.gift p:last-child {
+  margin-bottom: 2vh;
+}
+.scene-transition.to-end {
+  height: 5vh;
 }
 footer {
   position: relative;
@@ -1182,6 +1191,17 @@ footer h2 {
   50% {
     opacity: 0.9;
     transform: scale(1.15) rotate(12deg);
+  }
+}
+@keyframes universe-glow {
+  0%,
+  100% {
+    transform: translateY(0) scale(0.99);
+    filter: drop-shadow(0 0 10px #8da8ff45);
+  }
+  50% {
+    transform: translateY(-6px) scale(1.015);
+    filter: drop-shadow(0 0 24px #b8c8ff99);
   }
 }
 @keyframes arrow-breathe {
@@ -1267,7 +1287,7 @@ footer h2 {
     line-height: 0.86;
   }
   .surprise {
-    min-height: 160vh;
+    min-height: 140vh;
   }
   .surprise p {
     margin-bottom: 17vh;
