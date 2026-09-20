@@ -275,7 +275,11 @@ export function Story() {
       </Chapter>
       <Chapter id="us" number="V" title="Nosotros" mood="us">
         <div className="rose" />
-        <ScrollStory lines={story.us} />
+        <ScrollStory
+          className="us-story"
+          lines={story.us}
+          endPadding={2}
+        />
         <img
           className="story-image couple-image"
           src="/images/arian_oriana.png"
@@ -289,14 +293,17 @@ export function Story() {
         mood="future"
       >
         <Atmosphere variant="stars" />
-        <ScrollStory lines={story.future} />
+        <ScrollStory
+          className="future-story"
+          lines={story.future}
+          endPadding={2}
+        />
         <img
           className="story-image couple-small-image"
           src="/images/couple.png"
           alt="Arian y Oriana juntos"
         />
       </Chapter>
-      <SceneTransition tone="to-black" />
       <section className="surprise">
         <Atmosphere variant="stars" />
         <div>

@@ -568,11 +568,11 @@ main {
 }
 .couple-image {
   width: min(760px, 92vw);
-  margin-top: 2.5vh;
+  margin-top: 1vh;
 }
 .couple-small-image {
   width: min(480px, 78vw);
-  margin-top: 1vh;
+  margin-top: 0.5vh;
 }
 .june-image {
   overflow: hidden;
