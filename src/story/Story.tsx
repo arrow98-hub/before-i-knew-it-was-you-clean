@@ -191,6 +191,18 @@ export function Story() {
           <span>♥</span>
           <span>♥</span>
           <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
+          <span>♥</span>
         </div>
         <ScrollStory lines={story.return} />
         <p className="date return-date">18 de agosto.</p>

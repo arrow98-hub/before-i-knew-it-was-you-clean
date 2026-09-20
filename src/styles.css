@@ -525,7 +525,7 @@ main {
 }
 .couple-image {
   width: min(760px, 92vw);
-  margin-top: 5vh;
+  margin-top: 2.5vh;
 }
 .june-image {
   overflow: hidden;
@@ -779,6 +779,66 @@ main {
   left: 65%;
   top: 75%;
   animation-duration: 17s;
+}
+.floating-hearts span:nth-child(25) {
+  left: 2%;
+  top: 22%;
+  animation-duration: 18s;
+}
+.floating-hearts span:nth-child(26) {
+  left: 18%;
+  top: 52%;
+  animation-duration: 22s;
+}
+.floating-hearts span:nth-child(27) {
+  left: 31%;
+  top: 6%;
+  animation-duration: 16s;
+}
+.floating-hearts span:nth-child(28) {
+  left: 45%;
+  top: 91%;
+  animation-duration: 20s;
+}
+.floating-hearts span:nth-child(29) {
+  left: 56%;
+  top: 42%;
+  animation-duration: 19s;
+}
+.floating-hearts span:nth-child(30) {
+  left: 72%;
+  top: 90%;
+  animation-duration: 23s;
+}
+.floating-hearts span:nth-child(31) {
+  left: 87%;
+  top: 10%;
+  animation-duration: 17s;
+}
+.floating-hearts span:nth-child(32) {
+  left: 98%;
+  top: 48%;
+  animation-duration: 21s;
+}
+.floating-hearts span:nth-child(33) {
+  left: 8%;
+  top: 64%;
+  animation-duration: 15s;
+}
+.floating-hearts span:nth-child(34) {
+  left: 52%;
+  top: 29%;
+  animation-duration: 24s;
+}
+.floating-hearts span:nth-child(35) {
+  left: 82%;
+  top: 73%;
+  animation-duration: 18s;
+}
+.floating-hearts span:nth-child(36) {
+  left: 39%;
+  top: 36%;
+  animation-duration: 20s;
 }
 .return-date {
   color: #26304f;
