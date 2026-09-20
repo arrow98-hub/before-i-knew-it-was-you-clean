@@ -37,7 +37,7 @@ function SceneTransition({ tone }: { tone: string }) {
   );
 }
 
-const STORY_SONG = "/audio/story-song.mp3";
+const STORY_SONG = "/music/Risk%20It%20All.mp3";
 
 export function Story() {
   const root = useRef<HTMLElement>(null);
@@ -111,7 +111,7 @@ export function Story() {
       <Chapter id="prologue" number="00" title="Prólogo" mood="prologue">
         <p className="kicker">Antes de saber que eras tú</p>
         <button
-          className="music-toggle"
+          className={`music-toggle${isPlaying ? " is-playing" : ""}`}
           type="button"
           onClick={toggleMusic}
           disabled={!audioAvailable}
@@ -120,6 +120,12 @@ export function Story() {
           {isPlaying ? <Pause size={16} /> : <Play size={16} />}
           <Music2 size={18} />
           <span>{isPlaying ? "Pausar música" : "Escuchar esta historia"}</span>
+          <span className="music-visualizer" aria-hidden="true">
+            <i />
+            <i />
+            <i />
+            <i />
+          </span>
         </button>
         <ScrollStory
           className="prologue-story"
@@ -270,6 +276,11 @@ export function Story() {
       <Chapter id="us" number="V" title="Nosotros" mood="us">
         <div className="rose" />
         <ScrollStory lines={story.us} />
+        <img
+          className="story-image couple-small-image"
+          src="/images/couple.png"
+          alt="Arian y Oriana juntos"
+        />
         <img
           className="story-image couple-image"
           src="/images/arian_oriana.png"
